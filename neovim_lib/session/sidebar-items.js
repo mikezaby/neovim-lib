@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Session","An active Neovim session."]]});

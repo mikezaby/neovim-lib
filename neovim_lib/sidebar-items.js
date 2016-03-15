@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["neovim",""],["neovim_api",""],["session",""]]});
