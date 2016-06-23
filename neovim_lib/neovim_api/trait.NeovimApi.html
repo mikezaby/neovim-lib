@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content trait">
 <h1 class='fqn'><span class='in-band'>Trait <a href='../index.html'>neovim_lib</a>::<wbr><a href='index.html'>neovim_api</a>::<wbr><a class='trait' href=''>NeovimApi</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-593' class='srclink' href='../../src/neovim_lib/neovim_api.rs.html#345-385' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-641' class='srclink' href='../../src/neovim_lib/src/neovim_api.rs.html#345-385' title='goto source code'>[src]</a></span></h1>
 <pre class='rust trait'>pub trait NeovimApi {
     fn <a href='#tymethod.command' class='fnname'>command</a>(&amp;mut self, str: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;;
     fn <a href='#tymethod.feedkeys' class='fnname'>feedkeys</a>(&amp;mut self, keys: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, mode: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, escape_csi: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;;
@@ -90,8 +91,8 @@
         <ul class='item-list' id='implementors-list'>
     <li><code>impl <a class='trait' href='../../neovim_lib/neovim_api/trait.NeovimApi.html' title='neovim_lib::neovim_api::NeovimApi'>NeovimApi</a> for <a class='struct' href='../../neovim_lib/neovim/struct.Neovim.html' title='neovim_lib::neovim::Neovim'>Neovim</a></code></li>
 </ul><script type="text/javascript" async
-                              src="../../implementors/neovim_lib/neovim_api/trait.NeovimApi.js">
-                      </script></section>
+                         src="../../implementors/neovim_lib/neovim_api/trait.NeovimApi.js">
+                 </script></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -134,7 +135,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="rustdoc">
-    <meta name="description" content="API documentation for the Rust `neovim` mod in crate `neovim_lib`.">
-    <meta name="keywords" content="rust, rustlang, rust-lang, neovim">
+    <meta name="description" content="Source to the Rust file `src\rpc/mod.rs`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang">
 
-    <title>neovim_lib::neovim - Rust</title>
+    <title>mod.rs.html -- source</title>
 
-    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
-    <link rel="stylesheet" type="text/css" href="../../main.css">
+    <link rel="stylesheet" type="text/css" href="../../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../../main.css">
     
 
     
@@ -28,7 +28,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../index.html'>neovim_lib</a></p><script>window.sidebarCurrent = {name: 'neovim', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+        
     </nav>
 
     <nav class="sub">
@@ -42,21 +42,25 @@
         </form>
     </nav>
 
-    <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>neovim_lib</a>::<wbr><a class='mod' href=''>neovim</a></span><span class='out-of-band'><span id='render-detail'>
-                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                       [<span class='inner'>&#x2212;</span>]
-                   </a>
-               </span><a id='src-371' class='srclink' href='../../src/neovim_lib/src/neovim.rs.html#1-59' title='goto source code'>[src]</a></span></h1>
-<h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
-<table>
-                       <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Neovim.html'
-                                  title='neovim_lib::neovim::Neovim'>Neovim</a></td>
-                           <td class='docblock short'>
-                                
-                           </td>
-                       </tr></table></section>
+    <section id='main' class="content source"><pre class="line-numbers"><span id="1">1</span>
+<span id="2">2</span>
+<span id="3">3</span>
+<span id="4">4</span>
+<span id="5">5</span>
+<span id="6">6</span>
+<span id="7">7</span>
+<span id="8">8</span>
+</pre><pre class='rust '>
+
+<span class='kw'>pub</span> <span class='kw'>mod</span> <span class='ident'>model</span>;
+<span class='kw'>mod</span> <span class='ident'>client</span>;
+
+<span class='kw'>pub</span> <span class='kw'>use</span> <span class='self'>self</span>::<span class='ident'>model</span>::<span class='ident'>IntoVal</span>;
+<span class='kw'>pub</span> <span class='kw'>use</span> <span class='self'>self</span>::<span class='ident'>model</span>::<span class='ident'>FromVal</span>;
+<span class='kw'>pub</span> <span class='kw'>use</span> <span class='self'>self</span>::<span class='ident'>model</span>::<span class='ident'>RpcMessage</span>;
+<span class='kw'>pub</span> <span class='kw'>use</span> <span class='self'>self</span>::<span class='ident'>client</span>::<span class='ident'>Client</span>;
+</pre>
+</section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -108,13 +112,13 @@
     
 
     <script>
-        window.rootPath = "../../";
+        window.rootPath = "../../../../";
         window.currentCrate = "neovim_lib";
         window.playgroundUrl = "";
     </script>
-    <script src="../../jquery.js"></script>
-    <script src="../../main.js"></script>
+    <script src="../../../../jquery.js"></script>
+    <script src="../../../../main.js"></script>
     
-    <script defer src="../../search-index.js"></script>
+    <script defer src="../../../../search-index.js"></script>
 </body>
 </html>

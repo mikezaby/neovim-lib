@@ -9,8 +9,9 @@
 
     <title>lib.rs.html -- source</title>
 
-    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
-    <link rel="stylesheet" type="text/css" href="../../main.css">
+    <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../main.css">
+    
 
     
     
@@ -70,18 +71,21 @@
 <span id="27">27</span>
 <span id="28">28</span>
 <span id="29">29</span>
+<span id="30">30</span>
+<span id="31">31</span>
+<span id="32">32</span>
 </pre><pre class='rust '>
 <span class='doccomment'>//! # Rust library for Neovim clients</span>
 <span class='doccomment'>//!</span>
 <span class='doccomment'>//! Implements support for rust plugins for [Neovim](https://github.com/neovim/neovim) through its msgpack-rpc API.</span>
 <span class='doccomment'>//! # Examples</span>
 <span class='doccomment'>//! ```no_run</span>
-<span class='doccomment'>//! use neovim_lib::session::Session;</span>
-<span class='doccomment'>//! use neovim_lib::neovim::Neovim;</span>
-<span class='doccomment'>//! use neovim_lib::neovim_api::NeovimApi;</span>
+<span class='doccomment'>//! use neovim_lib::{Neovim, NeovimApi, Session};</span>
 <span class='doccomment'>//! </span>
-<span class='doccomment'>//! let session = Session::new_tcp(&quot;127.0.0.1:6666&quot;).unwrap();</span>
+<span class='doccomment'>//! let mut session = Session::new_tcp(&quot;127.0.0.1:6666&quot;).unwrap();</span>
+<span class='doccomment'>//! session.start_event_loop();</span>
 <span class='doccomment'>//! let mut nvim = Neovim::new(session);</span>
+<span class='doccomment'>//!</span>
 <span class='doccomment'>//! let buffers = nvim.get_buffers().unwrap();</span>
 <span class='doccomment'>//! buffers[0].set_line(&amp;mut nvim, 0, &quot;replace first line&quot;).unwrap();</span>
 <span class='doccomment'>//! nvim.command(&quot;vsplit&quot;).unwrap();</span>
@@ -91,6 +95,8 @@
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>rmp</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>rmp_serialize</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>rustc_serialize</span>;
+<span class='attribute'>#[<span class='ident'>macro_use</span>]</span>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>log</span>;
 
 <span class='kw'>mod</span> <span class='ident'>rpc</span>;
 <span class='attribute'>#[<span class='ident'>macro_use</span>]</span>
@@ -100,6 +106,7 @@
 
 <span class='kw'>pub</span> <span class='kw'>use</span> <span class='ident'>neovim</span>::<span class='ident'>Neovim</span>;
 <span class='kw'>pub</span> <span class='kw'>use</span> <span class='ident'>neovim_api</span>::<span class='ident'>NeovimApi</span>;
+<span class='kw'>pub</span> <span class='kw'>use</span> <span class='ident'>session</span>::<span class='ident'>Session</span>;
 </pre>
 </section>
     <section id='search' class="content hidden"></section>
@@ -144,7 +151,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>
@@ -153,13 +160,13 @@
     
 
     <script>
-        window.rootPath = "../../";
+        window.rootPath = "../../../";
         window.currentCrate = "neovim_lib";
         window.playgroundUrl = "";
     </script>
-    <script src="../../jquery.js"></script>
-    <script src="../../main.js"></script>
+    <script src="../../../jquery.js"></script>
+    <script src="../../../main.js"></script>
     
-    <script defer src="../../search-index.js"></script>
+    <script defer src="../../../search-index.js"></script>
 </body>
 </html>
