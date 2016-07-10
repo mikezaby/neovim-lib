@@ -18,6 +18,7 @@
 extern crate rmp;
 extern crate rmp_serialize;
 extern crate rustc_serialize;
+extern crate unix_socket;
 #[macro_use]
 extern crate log;
 
